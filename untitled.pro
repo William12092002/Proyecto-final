@@ -10,12 +10,14 @@ CONFIG += c++17
 
 SOURCES += \
     Enemigo.cpp \
+    game.cpp \
     main.cpp \
     player.cpp \
     proyectil.cpp
 
 HEADERS += \
     Enemigo.h \
+    game.h \
     player.h \
     proyectil.h
 

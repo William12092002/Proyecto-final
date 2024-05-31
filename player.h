@@ -4,12 +4,17 @@
 
 
 #include <QGraphicsRectItem>
+#include <Qobject>
 
-class MyRect: public QGraphicsRectItem{
-
+class MyPlayer: public QObject, public QGraphicsRectItem{
+Q_OBJECT
 public:
 
     void keyPressEvent(QKeyEvent * event);
+
+public slots:
+
+    void spawn();
 };
 
 #endif // PLAYER_H

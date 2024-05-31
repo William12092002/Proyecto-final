@@ -1,0 +1,28 @@
+class Character : public QObject, public QGraphicsPixmapItem
+{
+    Q_OBJECT
+
+public:
+    Character(QVector<QPixmap> animationFrames)
+        : frames(std::move(animationFrames))
+    {
+        // Establecer la primera imagen
+        setPixmap(frames[0]);
+        // Iniciar el temporizador
+        QTimer *timer = new QTimer(this);
+        connect(timer, &QTimer::timeout, this, &Character::nextFrame);
+        timer->start(100);  // Cambiar la imagen cada 100 ms
+    }
+
+public slots:
+    void nextFrame()
+    {
+        // Cambiar a la siguiente imagen
+        setPixmap(frames[currentFrame]);
+        currentFrame = (currentFrame + 1) % frames.size();
+    }
+
+private:
+    QVector<QPixmap> frames;
+    int currentFrame = 0;
+};

@@ -1,4 +1,5 @@
 #include "player.h"
+#include "Enemigo.h"
 #include "proyectil.h"
 #include "qgraphicsscene.h"
 #include <QDebug>
@@ -6,16 +7,25 @@
 
 
 
-void MyRect::keyPressEvent(QKeyEvent *event)
+void MyPlayer::keyPressEvent(QKeyEvent *event)
 {
     if(event->key() == Qt::Key_W){
-        setPos(x(),y()-10);
+        if(pos().y()+100!=400){
+            setPos(x(),y()-10);
+        }
+
     }
     else if(event->key() == Qt::Key_S){
-        setPos(x(),y()+10);
+        if(pos().y()+100!=600){
+           setPos(x(),y()+10);
+        }
+
     }
     else if(event->key() == Qt::Key_A){
-        setPos(x()-10,y());
+        if(pos().x()!=0){
+            setPos(x()-10,y());
+        }
+
     }
     else if(event->key() == Qt::Key_D){
         setPos(x()+10,y());
@@ -29,4 +39,10 @@ void MyRect::keyPressEvent(QKeyEvent *event)
 
 
     }
+}
+
+void MyPlayer :: spawn(){
+    // create an enemy
+    Enemigo * enemy = new Enemigo();
+    scene()->addItem(enemy);
 }
