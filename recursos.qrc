@@ -1,0 +1,46 @@
+<RCC>
+    <qresource prefix="/imagenes">
+        <file>player caminando/sprite_0.png</file>
+        <file>player caminando/sprite_1.png</file>
+        <file>player caminando/sprite_2.png</file>
+        <file>player caminando/sprite_3.png</file>
+        <file>player izquierda/sprite_0.png</file>
+        <file>player izquierda/sprite_1.png</file>
+        <file>player izquierda/sprite_2.png</file>
+        <file>player izquierda/sprite_3.png</file>
+        <file>policia moviendose/sprite_0.png</file>
+        <file>policia moviendose/sprite_1.png</file>
+        <file>policia moviendose/sprite_2.png</file>
+        <file>policia moviendose/sprite_3.png</file>
+        <file>escenarios/escenario 1.jpg</file>
+        <file>escenarios/images.jfif</file>
+        <file>escenarios/escenario 7.png</file>
+        <file>sandia/sprite_0.png</file>
+        <file>sandia/sprite_1.png</file>
+        <file>sandia/sprite_2.png</file>
+        <file>sandia/sprite_3.png</file>
+        <file>player respirando/sprite_0.png</file>
+        <file>player respirando/sprite_1.png</file>
+        <file>player respirando/sprite_2.png</file>
+        <file>policia moviendose/policia quieto.png</file>
+        <file>bala/sprite_0.png</file>
+        <file>bala/sprite_1.png</file>
+        <file>bala/sprite_2.png</file>
+        <file>bala/sprite_3.png</file>
+        <file>bala/sprite_4.png</file>
+        <file>bala/sprite_5.png</file>
+        <file>player mirando hacia arriba/sprite_0.png</file>
+        <file>player mirando hacia arriba/sprite_1.png</file>
+        <file>player mirando hacia arriba/sprite_2.png</file>
+        <file>player mirando hacia arriba/sprite_3.png</file>
+        <file>player mirando hacia arriba/sprite_4.png</file>
+        <file>libro cayendo/sprite_0.png</file>
+        <file>libro cayendo/sprite_1.png</file>
+        <file>libro cayendo/sprite_2.png</file>
+        <file>libro cayendo/sprite_3.png</file>
+        <file>libro cayendo/sprite_4.png</file>
+        <file>libro cayendo/sprite_5.png</file>
+        <file>libro cayendo/sprite_6.png</file>
+        <file>libro cayendo/sprite_7.png</file>
+    </qresource>
+</RCC>

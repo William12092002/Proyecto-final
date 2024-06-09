@@ -2,14 +2,22 @@
 #define PROYECTIL_H
 
 
-#include <QGraphicsRectItem>
+
+#include <QGraphicsPixmapItem>
 #include <QObject>
-class proyectil :  public QObject, public QGraphicsRectItem{
+class proyectil :  public QObject, public QGraphicsPixmapItem{
   Q_OBJECT
 public:
-    proyectil();
+    proyectil(QGraphicsItem * parent =0);
+
+private:
+    QVector<QPixmap> anim[4];
+    int anim_index;
+
+
 public slots:
     void move();
+    void changeA();
 };
 
 #endif // PROYECTIL_H

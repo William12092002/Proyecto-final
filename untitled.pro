@@ -10,15 +10,31 @@ CONFIG += c++17
 
 SOURCES += \
     Enemigo.cpp \
+    Enemy_proy.cpp \
+    MenuText.cpp \
+    crono.cpp \
+    fall_wat.cpp \
+    fisicas.cpp \
     game.cpp \
+    libro.cpp \
     main.cpp \
+    nsandias.cpp \
     player.cpp \
+    playerFirst.cpp \
     proyectil.cpp
 
 HEADERS += \
     Enemigo.h \
+    Enemy_proy.h \
+    MenuText.h \
+    crono.h \
+    fall_wat.h \
+    fisicas.h \
     game.h \
+    libro.h \
+    nsandias.h \
     player.h \
+    playerFirst.h \
     proyectil.h
 
 FORMS +=
@@ -27,3 +43,6 @@ FORMS +=
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+RESOURCES += \
+    recursos.qrc

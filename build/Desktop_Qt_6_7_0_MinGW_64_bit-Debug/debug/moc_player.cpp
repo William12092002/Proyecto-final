@@ -36,7 +36,7 @@ namespace {
 struct qt_meta_stringdata_CLASSMyPlayerENDCLASS_t {};
 constexpr auto qt_meta_stringdata_CLASSMyPlayerENDCLASS = QtMocHelpers::stringData(
     "MyPlayer",
-    "spawn",
+    "staticA",
     ""
 );
 #else  // !QT_MOC_HAS_STRINGDATA
@@ -75,7 +75,7 @@ Q_CONSTINIT const QMetaObject MyPlayer::staticMetaObject = { {
     qt_incomplete_metaTypeArray<qt_meta_stringdata_CLASSMyPlayerENDCLASS_t,
         // Q_OBJECT / Q_GADGET
         QtPrivate::TypeAndForceComplete<MyPlayer, std::true_type>,
-        // method 'spawn'
+        // method 'staticA'
         QtPrivate::TypeAndForceComplete<void, std::false_type>
     >,
     nullptr
@@ -87,7 +87,7 @@ void MyPlayer::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, vo
         auto *_t = static_cast<MyPlayer *>(_o);
         (void)_t;
         switch (_id) {
-        case 0: _t->spawn(); break;
+        case 0: _t->staticA(); break;
         default: ;
         }
     }
@@ -104,8 +104,8 @@ void *MyPlayer::qt_metacast(const char *_clname)
     if (!_clname) return nullptr;
     if (!strcmp(_clname, qt_meta_stringdata_CLASSMyPlayerENDCLASS.stringdata0))
         return static_cast<void*>(this);
-    if (!strcmp(_clname, "QGraphicsRectItem"))
-        return static_cast< QGraphicsRectItem*>(this);
+    if (!strcmp(_clname, "QGraphicsPixmapItem"))
+        return static_cast< QGraphicsPixmapItem*>(this);
     return QObject::qt_metacast(_clname);
 }
 
