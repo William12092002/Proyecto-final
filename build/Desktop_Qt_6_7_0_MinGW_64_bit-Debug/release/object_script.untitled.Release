@@ -20,6 +20,7 @@ release/moc_fall_wat.o
 release/moc_fisicas.o
 release/moc_game.o
 release/moc_libro.o
+release/moc_nsandias.o
 release/moc_player.o
 release/moc_playerFirst.o
 release/moc_proyectil.o

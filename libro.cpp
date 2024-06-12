@@ -77,7 +77,8 @@ void book::colision()
     for (int i = 0, n = colliding_items.size(); i < n; ++i){
         if (typeid(*(colliding_items[i])) == typeid(MyPlayer)){
             MyPlayer *jugador = dynamic_cast<MyPlayer *>(colliding_items[i]);
-            jugador->NLibros++;
+            jugador->setLibros(jugador->getNlibros()+1);
+
 
             scene()->removeItem(this);
             delete this;

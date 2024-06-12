@@ -16,6 +16,8 @@ public:
     void Moveright();
     void MoveLeft();
     QTimer *timer;
+    int proyec=0;
+    int getproyec();
 
 private:
     QVector<QPixmap> anim[4];   // animations

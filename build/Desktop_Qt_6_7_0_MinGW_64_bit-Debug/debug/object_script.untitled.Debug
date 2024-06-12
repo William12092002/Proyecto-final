@@ -20,6 +20,7 @@ debug/moc_fall_wat.o
 debug/moc_fisicas.o
 debug/moc_game.o
 debug/moc_libro.o
+debug/moc_nsandias.o
 debug/moc_player.o
 debug/moc_playerFirst.o
 debug/moc_proyectil.o

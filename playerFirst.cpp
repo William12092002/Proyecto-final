@@ -74,6 +74,12 @@ void MyPlayer1::MoveLeft()
     anim_index++;
 }
 
+int MyPlayer1::getproyec()
+{
+    return proyec;
+}
+
+
 void MyPlayer1::setAnimacion(bool v){
 
     animacion = v;

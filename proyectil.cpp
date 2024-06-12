@@ -1,6 +1,7 @@
 #include "proyectil.h"
 #include "Enemigo.h"
 #include "libro.h"
+
 #include "qgraphicsscene.h"
 #include <QTimer>
 

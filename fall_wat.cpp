@@ -50,9 +50,11 @@ void fallOb::colision()
     QList<QGraphicsItem *> colliding_items = collidingItems();
     for (int i = 0, n = colliding_items.size(); i < n; ++i){
         if (typeid(*(colliding_items[i])) == typeid(MyPlayer1)){
+            MyPlayer1 *jugador1 = dynamic_cast<MyPlayer1 *>(colliding_items[i]);
+            jugador1->proyec=jugador1->proyec+5;
             scene()->removeItem(this);
             delete this;
-            qDebug()<<"deleted";
+
             return;
 
         }
@@ -67,7 +69,7 @@ void fallOb::move()
     if(pos().y() == 600){
         scene()->removeItem(this);
         delete this;
-        qDebug()<<"R";
+
         return;
     }
 }

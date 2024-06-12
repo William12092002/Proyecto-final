@@ -1,4 +1,5 @@
 #include "fisicas.h"
+
 fisica::fisica(int x, int y, int w, int h, QGraphicsPixmapItem *item)
 {
     x_dimension = 4;

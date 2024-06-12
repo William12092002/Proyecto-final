@@ -5,6 +5,8 @@ using namespace std;
 
 Enemigo::Enemigo(QGraphicsItem * parent):QObject(), QGraphicsPixmapItem(parent){
 
+    musica = new QMediaPlayer();
+    control = new QAudioOutput();
     anim_index = 0;
     vida = 3;
     enemi[0].push_back(QPixmap(":/imagenes/policia moviendose/sprite_0.png"));
@@ -47,6 +49,10 @@ void Enemigo::shoot()
     proyectilE * proyectil1 = new proyectilE ();
     proyectil1->setPos(x(),y());
     scene()->addItem(proyectil1);
+    musica->setSource(QUrl("qrc:/sounds/sonidos/disparo.mp3"));
+    musica->setAudioOutput(control);
+    musica->play();
+
 }
 
 void  Enemigo :: change_a(){

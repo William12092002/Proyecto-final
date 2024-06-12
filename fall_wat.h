@@ -9,6 +9,7 @@
 #include <random>
 #include "fisicas.h"
 #include "playerFirst.h"
+#include "player.h"
 
 
 

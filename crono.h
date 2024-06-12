@@ -12,10 +12,11 @@ class cronometro: public QGraphicsTextItem{
 public:
 
     cronometro (int tiempo,QGraphicsItem * parent=0);
+    int taim;
 private:
 
     QTimer * ti = new QTimer;
-    int taim;
+
 public slots:
     void changeT();
 

@@ -7,6 +7,8 @@
 #include <QTimer>
 #include <random>
 #include "Enemy_proy.h"
+#include <QMediaPlayer>
+#include <QAudioOutput>
 
 class Enemigo :  public QObject, public QGraphicsPixmapItem{
     Q_OBJECT
@@ -22,6 +24,8 @@ private:
     QTimer * bulletTime ;
     int anim_index;
     int vida;
+    QMediaPlayer * musica;
+    QAudioOutput * control;
 
 
 public slots:

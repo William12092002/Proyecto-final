@@ -4,13 +4,21 @@
 
 #include <QGraphicsTextItem>
 #include <QFont>
+
+#include <QObject>
+
 class Score: public QGraphicsTextItem{
+    Q_OBJECT
 public:
     Score(QGraphicsItem * parent=0);
-    void setScore();
+    void setScore(int n);
     int getScore();
+    void decreaceS();
 private:
-    int score;
+    int balas ;
+    QString balas_;
+    QString texto;
+
 };
 
 

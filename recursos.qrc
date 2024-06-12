@@ -42,5 +42,13 @@
         <file>libro cayendo/sprite_5.png</file>
         <file>libro cayendo/sprite_6.png</file>
         <file>libro cayendo/sprite_7.png</file>
+        <file>escenarios/escenario1.png</file>
+        <file>escenarios/escenario1 (1).png</file>
+        <file>escenarios/imagen2.png</file>
+    </qresource>
+    <qresource prefix="/sounds">
+        <file>sonidos/menu.mp3</file>
+        <file>sonidos/nivel1.mp3</file>
+        <file>sonidos/disparo.mp3</file>
     </qresource>
 </RCC>

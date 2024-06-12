@@ -38,7 +38,10 @@ constexpr auto qt_meta_stringdata_CLASSgameENDCLASS = QtMocHelpers::stringData(
     "game",
     "spawn",
     "",
-    "spawnW"
+    "spawnW",
+    "setscene3",
+    "n",
+    "decrease"
 );
 #else  // !QT_MOC_HAS_STRINGDATA
 #error "qtmochelpers.h not found or too old."
@@ -51,7 +54,7 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSgameENDCLASS[] = {
       12,       // revision
        0,       // classname
        0,    0, // classinfo
-       2,   14, // methods
+       4,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -59,11 +62,15 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSgameENDCLASS[] = {
        0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags, initial metatype offsets
-       1,    0,   26,    2, 0x0a,    1 /* Public */,
-       3,    0,   27,    2, 0x0a,    2 /* Public */,
+       1,    0,   38,    2, 0x0a,    1 /* Public */,
+       3,    0,   39,    2, 0x0a,    2 /* Public */,
+       4,    1,   40,    2, 0x0a,    3 /* Public */,
+       6,    0,   43,    2, 0x0a,    5 /* Public */,
 
  // slots: parameters
     QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void, QMetaType::Int,    5,
     QMetaType::Void,
 
        0        // eod
@@ -81,6 +88,11 @@ Q_CONSTINIT const QMetaObject game::staticMetaObject = { {
         // method 'spawn'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'spawnW'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'setscene3'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<int, std::false_type>,
+        // method 'decrease'
         QtPrivate::TypeAndForceComplete<void, std::false_type>
     >,
     nullptr
@@ -94,10 +106,11 @@ void game::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void *
         switch (_id) {
         case 0: _t->spawn(); break;
         case 1: _t->spawnW(); break;
+        case 2: _t->setscene3((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
+        case 3: _t->decrease(); break;
         default: ;
         }
     }
-    (void)_a;
 }
 
 const QMetaObject *game::metaObject() const
@@ -119,13 +132,13 @@ int game::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 2)
+        if (_id < 4)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 2;
+        _id -= 4;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 2)
+        if (_id < 4)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 2;
+        _id -= 4;
     }
     return _id;
 }
